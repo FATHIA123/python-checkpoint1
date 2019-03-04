@@ -1,7 +1,7 @@
 # #1: Define a Vehicle class with the following properties and methods: 
 # - `vehicle_type` 
 # - `wheel_count`
-# - `name` 
+# - `c` 
 # - `cost` 
 # - `colors` 
 # - `vehicle_brand` 
@@ -18,7 +18,24 @@
 # Your Vehicle class should take one argument (a `dict`) with the above
 # attributes. Define the properties on the class from the dict that is passed in.
 
+class Vehicle(models.Model):
+    vehicle_type = models.CharField(max_length=30)
+    wheel_count = models.CharField(max_length=30)
+    wheel_count = models.CharField(max_length=30)
+    c = models.CharField(max_length=30)
+    cost = models.CharField(max_length=30)
+    colors = models.CharField(max_length=30)
+    vehicle_brand = models.CharField(max_length=30)
+    'mpg' : {
+        'city': 'string',
+        'highway' : 'string',
+        'combined': 'string'
 
+     }
+
+    def get_vehicle_type
+    def get_vehicle_brand
+    def get_vehicle_drive
 
 # #2: Create a Motorcycle class that inherits from the Vehicle class and has the
 # following properties and methods:
@@ -26,6 +43,7 @@
 # - method: `pop_wheelie` if `wheel_count` is not equal to 2 then it should be False,
 #       otherwise return "......pop!"
 
+class Motorcycle 
 
 
 # #3: Define a Car class that inherits from the vehicle class with the following attributes and methods:
